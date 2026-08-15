@@ -1,4 +1,4 @@
-import { Clock3, MapPin, Phone } from 'lucide-react';
+import { Clock3, Instagram, MapPin, Music2, Phone } from 'lucide-react';
 import { Brand } from './Brand';
 import { SectionReveal } from './SectionReveal';
 
@@ -11,6 +11,4 @@ export function Contact() {
   </section>;
 }
 
-export function Footer() {
-  return <footer className="border-t border-white/10 bg-[#01131e] py-10"><div className="shell flex flex-col justify-between gap-8 sm:flex-row sm:items-end"><Brand /><div className="text-sm text-white/45"><div className="mb-3 flex gap-4 text-white/70"><a href="#inicio">Inicio</a><a href="#carta">Carta</a><a href="#galeria">Galería</a><a href="#contacto">Contacto</a></div>© 2026 El Pulpo Bebé. Todos los derechos reservados.</div></div></footer>;
-}
+export function Footer() { return <footer className="border-t border-white/10 bg-[#01131e] py-10"><div className="shell flex flex-col justify-between gap-8 sm:flex-row sm:items-end"><Brand /><div className="text-sm text-white/45"><div className="mb-3 flex gap-4 text-white/70"><a href="#inicio">Inicio</a><a href="/carta">Carta</a><a href="#galeria">Galería</a><a href="#contacto">Contacto</a></div><div className="mb-4 flex items-center gap-2 lg:hidden"><a aria-label="Facebook" href="https://www.facebook.com/" className="grid size-9 place-items-center rounded-full border border-white/20 text-base font-bold text-white">f</a><a aria-label="Instagram" href="https://www.instagram.com/" className="grid size-9 place-items-center rounded-full border border-white/20 text-white"><Instagram size={17}/></a><a aria-label="TikTok" href="https://www.tiktok.com/" className="grid size-9 place-items-center rounded-full border border-white/20 text-white"><Music2 size={17}/></a></div>© 2026 El Pulpo Bebé. Todos los derechos reservados.</div></div></footer>; }
