@@ -44,8 +44,11 @@ header nav button:hover { transform: rotate(6deg) scale(1.06); background-color:
 #reservas { background: #0053aa !important; }
 footer { background: #001536 !important; }
 main > section:nth-of-type(3) { background: radial-gradient(circle at 82% 8%, rgba(76, 169, 255, .2), transparent 34%), linear-gradient(135deg, #003d86 0%, #002f70 48%, #00265c 100%) !important; }
-.ocean-journey { position: relative; isolation: isolate; overflow: hidden; background: linear-gradient(135deg, #004F9F, #003B70); }
-.ocean-journey::before { content: ''; position: fixed; inset: 0; z-index: 0; pointer-events: none; background: radial-gradient(ellipse 60% 30% at 50% -5%, rgba(0,174,239,.14), transparent 70%), radial-gradient(circle at 12% 45%, rgba(0,174,239,.06), transparent 30%); }
+#inicio::after { content: ''; position: absolute; inset: auto 0 -2px; z-index: -5; height: 55%; pointer-events: none; background: linear-gradient(to bottom, transparent 0%, rgba(0,79,159,.38) 35%, rgba(0,79,159,.82) 72%, #004F9F 100%); }
+#inicio::before { content: ''; position: absolute; inset: auto -12% -9% -12%; z-index: -4; height: 36%; pointer-events: none; opacity: .5; filter: blur(16px); transform: rotate(-2deg); background: radial-gradient(ellipse 34% 34% at 12% 100%, rgba(255,255,255,.25) 0%, rgba(189,235,255,.12) 32%, transparent 72%), radial-gradient(ellipse 44% 28% at 52% 105%, rgba(255,255,255,.18) 0%, rgba(178,229,255,.1) 35%, transparent 74%), radial-gradient(ellipse 30% 27% at 88% 96%, rgba(255,255,255,.16) 0%, transparent 70%); }
+#inicio > .shell > .right-6 { display: none; }
+.ocean-journey { position: relative; isolation: isolate; overflow: hidden; background: #004F9F; }
+.ocean-journey::before { content: ''; position: fixed; inset: 0; z-index: 0; pointer-events: none; background: radial-gradient(ellipse 60% 30% at 50% -5%, rgba(0,174,239,.14), transparent 70%), radial-gradient(circle at 12% 45%, rgba(0,174,239,.06), transparent 30%); -webkit-mask-image: linear-gradient(to bottom, transparent 0, transparent 150px, #000 330px); mask-image: linear-gradient(to bottom, transparent 0, transparent 150px, #000 330px); }
 .ocean-journey > section { position: relative; z-index: 1; background: transparent !important; }
 main.ocean-journey > #carta, main.ocean-journey > #nosotros, main.ocean-journey > #galeria, main.ocean-journey > #contacto, main.ocean-journey > #reservas, main.ocean-journey > section:nth-of-type(3) { background: transparent !important; }
 main.ocean-journey > section:nth-of-type(2) { background: radial-gradient(circle at 50% 40%, rgba(0,174,239,.08), transparent 55%) !important; }

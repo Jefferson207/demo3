@@ -8,7 +8,7 @@ import { Brand } from './Brand';
 import { OceanBubbles } from './OceanBubbles';
 
 export const criticalImages = [
-  'https://www.peru.travel/Contenido/Atractivo/Imagen/en/170/1.1/InformacionGeneral/Restaurant%20of%20Lima.jpg',
+  '/images/hero-restaurant-premium.png',
   'https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1600&q=85',
   'https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=900&q=80',
   'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80',
